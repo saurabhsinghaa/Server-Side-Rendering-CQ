@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website</title>
+    <style>
+        body {
+            background-color: #D7BBF5;
+            margin: 0; 
+            font-family: 'Handjet', 'cursive';
+            font-family: 'Roboto', 'sans-serif';
+            font-family: 'Work Sans', 'sans-serif';
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between; /* Spacing between buttons and "Welcome" */
+            align-items: center; /* Center align the items vertically */
+            background-color: #A076F9;
+            padding: 10px;
+        }
+
+        .welcome {
+            color: #fff;
+            margin-left: auto; /* Push "Welcome" to the right */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            background-color: #8654f1;
+        }
+        h3{
+            margin: 20px;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Handjet:wght@200&family=Roboto:ital,wght@1,500&family=Work+Sans:wght@200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="/">Home</a>
+            <a href="/contact">Contact</a>
+            <a href="/about">About</a>
+            <a href="/todo">Todo</a>
+        </div>
+        <div class="welcome">Welcome <%= username %></div>
+    </nav>
+    <h3>THIS IS HOME PAGE</h3>
+</body>
+
+</html>

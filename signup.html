@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body {
+            background-color: #D7BBF5;
+            color: white;
+        }
+
+        div {
+            background-color: #A076F9;
+            width: 30%;
+            margin-left: 35%;
+            margin-right: 35%;
+            margin-top: 5%;
+            border: 2px solid #A076F9;
+            border-radius: 15px;
+            padding: 20px;
+            padding-left: 5px;
+        }
+
+        input {
+            margin: 10px 0% 10px 0%;
+            border-radius: 10px;
+            border: 0px solid #A076F9;
+            border-color: #A076F9;
+            color: black;
+            width: 100%;
+            padding: 5px;
+        }
+
+        label{
+            color: white;
+            font-family: 'Handjet', 'cursive';
+            font-family: 'Roboto', 'sans-serif';
+            font-family: 'Work Sans', 'sans-serif';
+            margin: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Handjet', 'cursive';
+        }
+
+        form {
+            padding: 2px;
+        }
+
+        input[type="submit"] {
+            background-color: #D7BBF5;
+            width: 20%;
+            margin-left: 40%;
+            margin-right: 40%;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Handjet:wght@200&family=Roboto:ital,wght@1,500&family=Work+Sans:wght@200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <form action="/signup" method="post">
+            <h2>SIGNUP</h2>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required>
+            <br>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required>
+            <br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+    <script src="/signup_script.js"></script>
+</body>
+
+</html>

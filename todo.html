@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            background-color: #D7BBF5;
+        }
+
+        #left_pane {
+            flex: 1;
+            padding: 50px;
+            border-right: 1px solid #ccc;
+            background-color: #A076F9;
+            border-radius: 12px;
+        }
+
+        #right_pane {
+            flex: 2;
+            padding: 50px;
+            background-color: #A076F9;
+            border-radius: 12px;
+            margin-left: 10px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: white;
+            font-family: 'Handjet', 'cursive';
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .task-form {
+            display: none;
+        }
+
+        .active-form {
+            display: block;
+        }
+        button{
+            background-color: #D7BBF5;
+            border: 0px solid #A076F9;
+            border-radius: 4px;
+            width: 60px;
+            padding: 3px
+        }
+
+        #inp{
+            padding: 5px;
+            width: 30%;
+            border: 0px solid #A076F9;
+            border-radius: 7px;
+            margin-bottom: 12px;
+        }
+
+        input[type="checkbox"]:checked+label {
+            text-decoration: line-through;
+            color: grey;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="left_pane">
+        <h2>TODO LIST</h2>
+        <div id="parent"></div>
+    </div>
+    <div id="right_pane">
+        <div class="task-form active-form">
+            <h2>CREATE NEW TASK</h2>
+            <input type="text" placeholder="Enter Task" id="inp" />
+            <br>
+            <button id="btn">ADD</button>
+        </div>
+    </div>
+    <script src="/todoScript.js"></script>
+</body>
+
+</html>
